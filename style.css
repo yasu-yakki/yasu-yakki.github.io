@@ -145,10 +145,17 @@ form {
 .message {
   font-size: 25px;
 }
-.button {
-  margin-top: 20px;
-  width: 100px;
-  height: 70px;
+form a {
+  background: #fff;
+  margin-top: 40px;
+  text-decoration: none;
+  padding: 20px;
+  color: #000;
+  border-radius: 10px;
+}
+form a:active {
+  background: rgb(101, 101, 172);
+  color: #fff;
 }
 form input {
   margin-bottom: 20px;
