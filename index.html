@@ -8,6 +8,11 @@
   <title>根津 泰之のホームページ</title>
 </head>
 <body>
+  <script lang="JavaScript">
+    function msgdsp() {
+           alert("お問い合わせありがとうございます。");
+       }
+    </script>
   <header>
     <ul>
       <li><a href="#intro">自己紹介</a></li>
@@ -80,17 +85,15 @@
   <!-- /#activity -->
   <div class="hobby" id="hobby">
     <h1><br>趣味<small>-hobby-</small></h1>
+         <img src="images/IMG_7507.JPG" id="slideshow" alt="スライドショー表示領域">
     <h2>鉄道旅行</h2>
-    <img src="images/IMG_7507.JPG" alt="">
     <p>昔から鉄道に乗るのが好きだった。中学や高校では少し遠のいたが、<a href="https://www.youtube.com/channel/UCuDdJRJ6qR-wGILbpq-FXCw">スーツさんの動画</a>を見て再び火がついた。<br>      鉄道で中国地方1周、東日本1周を成し遂げる。
     </p>
     <p>なお、旅行大好きだが海外経験はない。</p>
-    
     <h2>YouTube</h2>
     <p><a href="https://www.youtube.com/channel/UCPyNsNSTUtywkekbDdCA_8Q">はなお</a>、<a href="https://www.youtube.com/channel/UCQlgzAUA4O2yVgn8X8B5Xbw">さがらごうち</a>、
       <a href="https://www.youtube.com/channel/UCxBR2bnAFAavDHpHtQrTA9Q">スーツ</a>、<a href="https://www.youtube.com/channel/UCbOAbbOpTdRR2IglyBmpZng">wakatte.tv</a></p>
-    <p>大学受験ネタが好きで、(元)大学生のYouTuberの動画をよく観る。</p>
-  </div>
+    <p>大学受験ネタが好きで、(元)大学生のYouTuberの動画をよく観る。<br><br></p>
   <!-- /#hobby -->
   <div class="twitter" id="twitter">
     <h1><br>twitter</h1>
@@ -125,13 +128,14 @@
         </div>
         <input type="hidden" id="token" name="token" value="1234567" />
         <br>
-        <a href="https://yasu-yakki.github.io/submit.html">送信（練習用）</a>
+        <p><INPUT class="btn" type="button" name="B1" value="このボタンを押すとアラートを表示します" onclick="msgdsp()"></p>
       </form>
     </div>
     <!-- /#form -->
   </div>
   <!-- /#contact -->
   <footer>
+    <script src="js/test.js"></script>
   </footer>
 </body>
 </html>

@@ -116,6 +116,10 @@ header li:first-child {
   float: right;
 }
 
+.hobby input {
+  float: right;
+}
+
 /*twitter*/
 .twitter {
   text-align: center;
@@ -145,7 +149,7 @@ form {
 .message {
   font-size: 25px;
 }
-form a {
+form .btn {
   background: #fff;
   margin-top: 40px;
   text-decoration: none;
@@ -153,7 +157,7 @@ form a {
   color: #000;
   border-radius: 10px;
 }
-form a:active {
+form .btn:active {
   background: rgb(101, 101, 172);
   color: #fff;
 }
@@ -167,5 +171,7 @@ form textarea {
 
 /*footer*/
 footer {
+  text-align: center;
+  margin-top: 30px;
   height: 300px;
 }
