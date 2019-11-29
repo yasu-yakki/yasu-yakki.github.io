@@ -13,7 +13,7 @@ var message = new Array(
     '最近、暑くて倒れそう',　'夏休みだ！', '運動会だ！',
     'そろそろ、紅葉しているだろうか', '最近、寒くね？', '今年も終わりですね');
 
-document.write("<br>タメにならない天気予報　" + message[i]);
+document.write("<br>タメにならない天気予報<br>" + message[i]);
 
 
 var day = new Date();
