@@ -19,4 +19,4 @@ document.write("<br>タメにならない天気予報<br>" + message[i]);
 var day = new Date();
 document.write("<br><br>" + (day.getMonth()+1) + "月です。"　+ "<br>"  );
 document.write(greet[day.getMonth()] + "<br>"  );
-document.write("<br>" + day.getHours() + "時をとっくに過ぎています。<br>早く仕事しましょう。"  );
+document.write("<br>" + day.getHours() + "時をとっくに過ぎています。<br>さっさと仕事しましょう。"  );
