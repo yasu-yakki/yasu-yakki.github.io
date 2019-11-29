@@ -11,6 +11,7 @@
     <script lang="JavaScript">
     function msgdsp() {
            alert("お問い合わせありがとうございます。");
+           location.reload();
        }
     </script>
     <header>
@@ -122,7 +123,7 @@
           num++;
         }
       document.getElementById("slideshow").src = pics_src[num];
-      setTimeout("slideshow_timer()", 3000);
+      setTimeout("slideshow_timer()", 5000);
       }
       </script>
 
@@ -184,7 +185,7 @@
           <input type="hidden" id="token" name="token" value="1234567" />
           <br>
           <p>
-            <INPUT class="btn" type="button" name="B1" value="このボタンを押すとアラートを表示します" onclick="msgdsp()">
+            <INPUT class="btn" type="button" name="B1" value="送信(練習用)" onclick="msgdsp()">
           </p>
         </form>
       </div>
