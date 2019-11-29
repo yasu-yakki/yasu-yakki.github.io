@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  width: 100%;
+  width:420px;
   background: rgb(185, 216, 194);
 }
 @media screen and (min-width: 500px){
@@ -33,15 +33,18 @@ header li {
   border-right: #fff solid 3px;
 }
 header li:first-child {
-  border-left: #fff solid 1px;
+  border-left: #fff solid 3px;
 }
 
 @media screen and (min-width: 500px){
   header ul {
-    padding: 0 3%;
+    padding: 0 5%;
   }
   header li:first-child {
-    margin-left: 10px;
+    margin-left: 20px;
+  }
+  header li {
+    padding: 0 3%;
   }
 }
 
@@ -150,6 +153,12 @@ header li:first-child {
   height: 310px;
   float: right;
 }
+@media screen and (max-width: 499px){
+  .hobby img {
+    width: 120px;
+    height: 155px;
+  }
+}
 
 
 /*twitter*/
@@ -199,6 +208,12 @@ form input {
 form textarea {
   width: 350px;
   height: 70px;
+}
+@media screen and (max-width: 499px){
+  form textarea {
+    width: 250px;
+    height: 70px;
+  }
 }
 
 /*footer*/
