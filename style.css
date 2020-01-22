@@ -1,42 +1,52 @@
 @charset "UTF-8";
-
 body {
   /* width:100%; */
   background: rgb(185, 216, 194);
 }
-@media screen and (min-width: 500px){
+
+@media screen and (min-width: 500px) {
   body {
     /* margin-left: 10%; */
     /* width: 1100px; */
   }
 }
+
 h1 {
   color: rgb(103, 99, 66);
 }
 
 /*header*/
+
 header {
-  position: fixed;            /* ヘッダーの固定 */
-    top: 0px;                   /* 位置(上0px) */
-    left: 0px;                  /* 位置(右0px) */
-    width: 100%;                /* 横幅100%　*/
-    height: 55px;              /* 縦幅140px */
+  position: fixed;
+  /* ヘッダーの固定 */
+  top: 0px;
+  /* 位置(上0px) */
+  left: 0px;
+  /* 位置(右0px) */
+  width: 100%;
+  /* 横幅100%　*/
+  height: 55px;
+  /* 縦幅140px */
   background: rgba(0, 217, 255, 0.4);
 }
+
 header ul {
   overflow: hidden;
 }
+
 header li {
   padding: 0 1%;
   list-style: none;
   float: left;
   border-right: #fff solid 3px;
 }
+
 header li:first-child {
   border-left: #fff solid 3px;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
   header ul {
     padding: 0 5%;
   }
@@ -48,13 +58,15 @@ header li:first-child {
   }
 }
 
+
 /*main*/
-@media screen and (max-width: 499px) { 
+
+@media screen and (max-width: 499px) {
   .main {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     background: url(images/main_small.JPG) no-repeat;
     background-size: cover;
-    height: 800px;
+    /* height: 800px; */
   }
   .main h1 {
     color: rgb(231, 244, 255);
@@ -63,9 +75,10 @@ header li:first-child {
     color: rgb(242, 255, 235);
   }
 }
+
 @media screen and (min-width: 500px) {
   .main {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     height: 1000px;
     width: 1060px;
     text-align: right;
@@ -74,20 +87,23 @@ header li:first-child {
 }
 
 
-/*intro*/
-.intro h1 {
+#title {
   text-align: center;
 }
+
+/*intro*/
+
 .intro img {
   width: 360px;
   height: 400px;
   margin-right: 30px;
 }
+
 .intro p {
   line-height: 1.8;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
   .intro {
     overflow: hidden;
   }
@@ -98,9 +114,7 @@ header li:first-child {
 
 
 /*history*/
-.history h1 {
-  text-align: center;
-}
+
 .history dl {
   width: 90%;
   background: #b0b8dde1;
@@ -110,50 +124,67 @@ header li:first-child {
   margin-right: auto;
   font-size: 20px;
 }
+
 .history dt {
   float: left;
   margin-bottom: 10px;
 }
-.history dd{
+
+.history dd {
   margin-left: 200px;
   margin-bottom: 10px;
-
 }
 
+/* skill */
+.skill ul{
+  width: 90%;
+  background: #a9c750e1;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.skill ul {
+  list-style: none;
+}
 
 /*activity*/
+
 .activity {
   overflow: hidden;
 }
-.activity h1 {
-  text-align: center;
-}
+
 .activity h3 {
   font-weight: normal;
   font-weight: bold;
 }
+
 .activity p {
   color: rgb(91, 96, 102);
 }
+
 .activity img {
   width: 510px;
   height: 288px;
   float: right;
 }
 
+
 /*hobby*/
+
 .hobby {
   overflow: hidden;
 }
-.hobby h1 {
-  text-align: center;
-}
+
 .hobby img {
   width: 240px;
   height: 310px;
   float: right;
 }
-@media screen and (max-width: 499px){
+
+@media screen and (max-width: 499px) {
   .hobby img {
     width: 120px;
     height: 155px;
@@ -174,10 +205,12 @@ header li:first-child {
 
 
 /*contact*/
+
 .contact {
   text-align: center;
   width: 95%;
-  margin-left: auto; margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
 }
 
@@ -187,9 +220,11 @@ form {
   border-radius: 20px;
   font-size: 20px;
 }
+
 .message {
   font-size: 25px;
 }
+
 form .btn {
   background: #fff;
   margin-top: 40px;
@@ -198,18 +233,22 @@ form .btn {
   color: #000;
   border-radius: 10px;
 }
+
 form .btn:active {
   background: rgb(101, 101, 172);
   color: #fff;
 }
+
 form input {
   margin-bottom: 20px;
 }
+
 form textarea {
   width: 350px;
   height: 70px;
 }
-@media screen and (max-width: 499px){
+
+@media screen and (max-width: 499px) {
   form textarea {
     width: 250px;
     height: 70px;
@@ -217,6 +256,7 @@ form textarea {
 }
 
 /*footer*/
+
 footer {
   text-align: center;
   margin-top: 30px;
