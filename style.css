@@ -1,13 +1,17 @@
 @charset "UTF-8";
 body {
-  /* width:100%; */
   background: rgb(185, 216, 194);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 900px) {
   body {
-    /* margin-left: 10%; */
-    /* width: 1100px; */
+    width: 1100px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    width: 900px;
   }
 }
 
@@ -28,21 +32,20 @@ header {
   /* 横幅100%　*/
   height: 55px;
   /* 縦幅140px */
-  background: rgba(0, 217, 255, 0.4);
+  background: rgba(0, 217, 255, 0.616);
 }
 
-header ul {
-  overflow: hidden;
+.container {
+  display: flex;
+  flex-direction: row;
 }
 
-header li {
-  padding: 0 1%;
+.item {
   list-style: none;
-  float: left;
   border-right: #fff solid 3px;
 }
 
-header li:first-child {
+#item_first_child {
   border-left: #fff solid 3px;
 }
 
@@ -58,34 +61,31 @@ header li:first-child {
   }
 }
 
-
-/*main*/
-
+/*top*/
 @media screen and (max-width: 499px) {
-  .main {
+  .top {
     /* margin-top: 60px; */
     background: url(images/main_small.JPG) no-repeat;
     background-size: cover;
-    /* height: 800px; */
   }
-  .main h1 {
+  .top h1 {
     color: rgb(231, 244, 255);
   }
-  .main h2 {
+  .top h2 {
     color: rgb(242, 255, 235);
   }
 }
-
 @media screen and (min-width: 500px) {
-  .main {
-    /* margin-top: 60px; */
-    height: 1000px;
-    width: 1060px;
+  .top {
+    margin-top: 60px;
+    width: 911px;
+    height: 1080px;
     text-align: right;
     background: url(images/main.jpg) no-repeat;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
-
 
 #title {
   text-align: center;
@@ -112,7 +112,6 @@ header li:first-child {
   }
 }
 
-
 /*history*/
 
 .history dl {
@@ -136,7 +135,7 @@ header li:first-child {
 }
 
 /* skill */
-.skill ul{
+.skill ul {
   width: 90%;
   background: #a9c750e1;
   border-radius: 10px;
@@ -171,7 +170,6 @@ header li:first-child {
   float: right;
 }
 
-
 /*hobby*/
 
 .hobby {
@@ -191,7 +189,6 @@ header li:first-child {
   }
 }
 
-
 /*twitter*/
 .twitter {
   text-align: center;
@@ -201,8 +198,6 @@ header li:first-child {
 .countdown {
   text-align: center;
 }
-
-
 
 /*contact*/
 
