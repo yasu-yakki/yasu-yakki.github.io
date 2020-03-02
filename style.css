@@ -12,6 +12,7 @@ body {
 @media screen and (max-width: 900px) {
   body {
     width: 900px;
+    margin: auto;
   }
 }
 
@@ -20,7 +21,6 @@ h1 {
 }
 
 /*header*/
-
 header {
   position: fixed;
   /* ヘッダーの固定 */
@@ -31,7 +31,6 @@ header {
   width: 100%;
   /* 横幅100%　*/
   height: 55px;
-  /* 縦幅140px */
   background: rgba(0, 217, 255, 0.616);
 }
 
@@ -42,28 +41,21 @@ header {
 
 .item {
   list-style: none;
-  border-right: #fff solid 3px;
+  border-right: #fff solid 2px;
 }
 
 #item_first_child {
-  border-left: #fff solid 3px;
+  border-left: #fff solid 2px;
 }
 
 @media screen and (min-width: 500px) {
-  header ul {
-    padding: 0 5%;
-  }
-  header li:first-child {
-    margin-left: 20px;
-  }
   header li {
-    padding: 0 3%;
+    padding: 0 2%;
   }
 }
 
 /*top*/
-
-.top {
+#top {
   margin-top: 60px;
   width: 1000px;
   height: 980px;
@@ -73,34 +65,36 @@ header {
   margin-left: auto;
 }
 
+@media screen and (max-width: 900px) {
+  #top {
+    margin-top: 60px;
+    width: 900px;
+    height: 870px;
+  }
+}
+
 #title {
   text-align: center;
 }
 
 /*intro*/
-
-.intro img {
+#intro img {
   width: 360px;
   height: 400px;
   margin-right: 30px;
 }
 
-.intro p {
+#intro p {
   line-height: 1.8;
 }
 
-@media screen and (min-width: 500px) {
-  .intro {
-    overflow: hidden;
-  }
-  .intro img {
-    float: left;
-  }
+.intro {
+  display: flex;
+  flex-direction: row;
 }
 
 /*history*/
-
-.history dl {
+#history dl {
   width: 100%;
   background: #b0b8dde1;
   border-radius: 10px;
@@ -109,19 +103,17 @@ header {
   margin-right: auto;
   font-size: 20px;
 }
-
-.history dt {
+#history dt {
   float: left;
   margin-bottom: 10px;
 }
-
-.history dd {
+#history dd {
   margin-left: 200px;
   margin-bottom: 10px;
 }
 
 /* skill */
-.skill ul {
+#skill ul {
   width: 100%;
   background: #a9c750e1;
   border-radius: 10px;
@@ -131,26 +123,26 @@ header {
   font-size: 20px;
 }
 
-.skill ul {
+#skill ul {
   list-style: none;
 }
 
 /*activity*/
 
-.activity {
+#activity {
   overflow: hidden;
 }
 
-.activity h3 {
+#activity h3 {
   font-weight: normal;
   font-weight: bold;
 }
 
-.activity p {
+#activity p {
   color: rgb(91, 96, 102);
 }
 
-.activity img {
+#activity img {
   width: 510px;
   height: 288px;
   float: right;
@@ -162,12 +154,6 @@ header {
   height: 434px;
   margin-right: 30px;
 }
-@media screen and (max-width: 499px) {
-  #hobby img {
-    width: 120px;
-    height: 155px;
-  }
-}
 
 /*SNS*/
 #sns {
@@ -175,7 +161,7 @@ header {
 }
 
 /*countdown*/
-.countdown {
+#countdown {
   text-align: center;
 }
 
