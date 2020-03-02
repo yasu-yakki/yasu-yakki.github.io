@@ -172,7 +172,23 @@
         </h1>
         <div class="container">
           <img src="images/IMG_7507.JPG" id="slideshow" />
-
+          <script>
+            var pics_src = new Array(
+              "images/IMG_7507.JPG",
+              "images/Snapseed.JPG"
+            );
+            var num = -1;
+            slideshow_timer();
+            function slideshow_timer() {
+              if (num == 1) {
+                num = 0;
+              } else {
+                num++;
+              }
+              document.getElementById("slideshow").src = pics_src[num];
+              setTimeout("slideshow_timer()", 5000);
+            }
+          </script>
           <div>
             <h2>鉄道旅行</h2>
             <p>

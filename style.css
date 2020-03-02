@@ -182,13 +182,6 @@ iframe {
   font-size: 25px;
 }
 
-@media screen and (max-width: 499px) {
-  form textarea {
-    width: 250px;
-    height: 70px;
-  }
-}
-
 /*my_mes*/
 #my_mes {
   text-align: center;
