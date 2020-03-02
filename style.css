@@ -62,29 +62,15 @@ header {
 }
 
 /*top*/
-@media screen and (max-width: 499px) {
-  .top {
-    /* margin-top: 60px; */
-    background: url(images/main_small.JPG) no-repeat;
-    background-size: cover;
-  }
-  .top h1 {
-    color: rgb(231, 244, 255);
-  }
-  .top h2 {
-    color: rgb(242, 255, 235);
-  }
-}
-@media screen and (min-width: 500px) {
-  .top {
-    margin-top: 60px;
-    width: 1000px;
-    height: 980px;
-    text-align: right;
-    background: url(images/main.jpg) no-repeat;
-    margin-right: auto;
-    margin-left: auto;
-  }
+
+.top {
+  margin-top: 60px;
+  width: 1000px;
+  height: 980px;
+  text-align: right;
+  background: url(images/main.jpg) no-repeat;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #title {
