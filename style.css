@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 body {
-  width: 100%;
+  width: 96%;
   background: rgb(185, 216, 194);
 }
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
   body {
     margin-left: 10%;
     width: 1100px;
@@ -16,39 +16,35 @@ h1 {
 
 /*header*/
 header {
-  position: fixed;            /* ヘッダーの固定 */
-    top: 0px;                   /* 位置(上0px) */
-    left: 0px;                  /* 位置(右0px) */
-    width: 100%;                /* 横幅100%　*/
-    height: 55px;              /* 縦幅140px */
+  position: fixed; /* ヘッダーの固定 */
+  top: 0px; /* 位置(上0px) */
+  left: 0px; /* 位置(右0px) */
+  width: 100%; /* 横幅100%　*/
+  height: 75px; /* 縦幅140px */
   background: rgba(0, 217, 255, 0.4);
 }
 header ul {
-  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 header li {
-  padding: 0 1%;
   list-style: none;
-  float: left;
-  border-right: #fff solid 3px;
-}
-header li:first-child {
-  border-left: #fff solid 1px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
-@media screen and (min-width: 500px){
-  header ul {
-    padding: 0 3%;
-  }
-  header li:first-child {
-    margin-left: 10px;
+@media screen and (min-width: 500px) {
+  header li {
+    font-size: 20px;
   }
 }
 
 /*main*/
-@media screen and (max-width: 499px) { 
+@media screen and (max-width: 499px) {
   .main {
-    margin-top: 60px;
+    margin-top: 75px;
     background: url(images/main_small.JPG) no-repeat;
     background-size: cover;
     height: 800px;
@@ -62,14 +58,13 @@ header li:first-child {
 }
 @media screen and (min-width: 500px) {
   .main {
-    margin-top: 60px;
+    margin-top: 75px;
     height: 1000px;
     width: 1060px;
     text-align: right;
     background: url(images/main.jpg) no-repeat;
   }
 }
-
 
 /*intro*/
 .intro h1 {
@@ -84,7 +79,7 @@ header li:first-child {
   line-height: 1.8;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
   .intro {
     overflow: hidden;
   }
@@ -92,7 +87,6 @@ header li:first-child {
     float: left;
   }
 }
-
 
 /*history*/
 .history h1 {
@@ -111,12 +105,10 @@ header li:first-child {
   float: left;
   margin-bottom: 10px;
 }
-.history dd{
+.history dd {
   margin-left: 200px;
   margin-bottom: 10px;
-
 }
-
 
 /*activity*/
 .activity {
@@ -151,7 +143,6 @@ header li:first-child {
   float: right;
 }
 
-
 /*twitter*/
 .twitter {
   text-align: center;
@@ -162,13 +153,12 @@ header li:first-child {
   text-align: center;
 }
 
-
-
 /*contact*/
 .contact {
   text-align: center;
   width: 95%;
-  margin-left: auto; margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
 }
 
