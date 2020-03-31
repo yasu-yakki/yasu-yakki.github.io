@@ -1,9 +1,11 @@
 @charset "UTF-8";
 body {
+
+  width: 96%;
   background: rgb(185, 216, 194);
 }
+@media screen and (min-width: 500px) {
 
-@media screen and (min-width: 900px) {
   body {
     width: 1100px;
     margin: auto;
@@ -22,58 +24,60 @@ h1 {
 
 /*header*/
 header {
-  position: fixed;
-  /* ヘッダーの固定 */
-  top: 0px;
-  /* 位置(上0px) */
-  left: 0px;
-  /* 位置(右0px) */
-  width: 100%;
-  /* 横幅100%　*/
-  height: 55px;
-  background: rgba(0, 217, 255, 0.616);
+  position: fixed; /* ヘッダーの固定 */
+  top: 0px; /* 位置(上0px) */
+  left: 0px; /* 位置(右0px) */
+  width: 100%; /* 横幅100%　*/
+  height: 75px; /* 縦幅140px */
+  background: rgba(0, 217, 255, 0.4);
 }
-
-.container {
+header ul {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
-
-.item {
+header li {
   list-style: none;
-  border-right: #fff solid 2px;
-}
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
 
-#item_first_child {
-  border-left: #fff solid 2px;
 }
 
 @media screen and (min-width: 500px) {
   header li {
-    padding: 0 2%;
+    font-size: 20px;
   }
 }
 
-/*top*/
-#top {
-  margin-top: 60px;
-  width: 1000px;
-  height: 980px;
-  text-align: right;
-  background: url(images/main.jpg) no-repeat;
-  margin-right: auto;
-  margin-left: auto;
+/*main*/
+@media screen and (max-width: 499px) {
+  .main {
+    margin-top: 75px;
+    background: url(images/main_small.JPG) no-repeat;
+    background-size: cover;
+    height: 800px;
+  }
+  .main h1 {
+    color: rgb(231, 244, 255);
+  }
+  .main h2 {
+    color: rgb(242, 255, 235);
+  }
 }
-
-@media screen and (max-width: 900px) {
-  #top {
-    margin-top: 60px;
-    width: 900px;
-    height: 870px;
+@media screen and (min-width: 500px) {
+  .main {
+    margin-top: 75px;
+    height: 1000px;
+    width: 1060px;
+    text-align: right;
+    background: url(images/main.jpg) no-repeat;
   }
 }
 
-#title {
+/*intro*/
+.intro h1 {
+
   text-align: center;
 }
 
@@ -88,9 +92,14 @@ header {
   line-height: 1.8;
 }
 
-.intro {
-  display: flex;
-  flex-direction: row;
+@media screen and (min-width: 500px) {
+  .intro {
+    overflow: hidden;
+  }
+  .intro img {
+    float: left;
+  }
+
 }
 
 /*history*/
@@ -107,25 +116,11 @@ header {
   float: left;
   margin-bottom: 10px;
 }
-#history dd {
+.history dd {
   margin-left: 200px;
   margin-bottom: 10px;
 }
 
-/* skill */
-#skill ul {
-  width: 100%;
-  background: #a9c750e1;
-  border-radius: 10px;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 20px;
-}
-
-#skill ul {
-  list-style: none;
-}
 
 /*activity*/
 
@@ -155,8 +150,9 @@ header {
   margin-right: 30px;
 }
 
-/*SNS*/
-#sns {
+/*twitter*/
+.twitter {
+
   text-align: center;
 }
 
@@ -187,11 +183,4 @@ iframe {
   text-align: center;
   margin-top: 30px;
   height: 300px;
-}
-
-/* footer */
-footer {
-  background-color: rgb(127, 157, 255);
-  text-align: center;
-  width: 100%;
 }
