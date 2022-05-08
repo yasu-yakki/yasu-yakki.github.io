@@ -20,6 +20,10 @@ h1 {
   color: rgb(103, 99, 66);
 }
 
+#top{
+  margin-top: 100px;
+}
+
 /*header*/
 header {
   position: fixed; /* ヘッダーの固定 */
