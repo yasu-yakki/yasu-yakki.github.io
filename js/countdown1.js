@@ -1,4 +1,4 @@
-var endDate = new Date('2022/03/01 12:00:00');
+var endDate = new Date('2024/03/01 12:00:00');
 var interval = 1000;
 
 function countdownTimer1(){
